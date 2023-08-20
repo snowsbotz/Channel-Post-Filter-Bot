@@ -1,0 +1,28 @@
+{
+  "name": "POST FINDER BOT",
+  "description": "POST FINDER BOT",
+  "keywords": [
+    "TELEGRAM",
+    "POST",
+    "FINDER"
+  ],
+  "repository": "https://github.com/snowsbotz/Channel-Post-Filter-Bot",
+  "logo": "https://ibb.co/FgPVtzw",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Bot token, Get it from @Botfather",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
